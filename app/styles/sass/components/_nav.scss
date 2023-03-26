@@ -1,0 +1,31 @@
+.nav {
+    display: flex;
+    gap: 25px;
+
+    &__link {
+        text-decoration: none;
+        color: var(--white-light);
+        display: flex;
+        align-items: center;
+
+        span {
+            font-weight: 600;
+            font-size: 20px;  
+            transition: color 200ms ease-in-out; 
+        }
+
+        span:hover {
+            color: var(--white-dark);
+        }
+        
+    }
+
+    &__icon {
+        width: 30px;
+    }
+
+    @media (max-width: 640px) {
+        display: none;
+    }
+
+}

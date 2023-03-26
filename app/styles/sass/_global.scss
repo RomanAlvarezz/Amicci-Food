@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #323337;
+    --white-light: #F9F8F4;
+    --white-dark: #E4E0DD;
+    --gold: #CD9B4A;
+    --blue-dark: #092A3A;
+    --blue-light: #125474;
+}
+
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--white-dark);
+}
+
+.modal-nav__background.move-x {
+    transform: translateX(0);
+}
+
+.search-screen__background.d-flex {
+    display: flex;
+}
