@@ -12,10 +12,14 @@ export function Card(info){
     })
 
     return `
-    <article>
-        <img src="${cardInfo.images.REGULAR.url}">
-        <h4>${cardInfo.label}</h4>
-        <a href="#/${slug}" data-id="${id}" data-url="${info._links.self.href}">See more</a>
+    <article class="card">
+    <img src="${cardInfo.images.REGULAR.url}" class="card__img">
+    <div class="card__text">
+    <a href="#/${slug}" data-id="${id}" data-url="${info._links.self.href}" class="card__title">${cardInfo.label}</a>
+            <p class="card__icon">
+                <i class="fa-solid fa-cookie-bite"></i>
+            </p> 
+        </div>  
     </article>
     `
 }

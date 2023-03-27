@@ -1,6 +1,9 @@
 @import './global';
 
-@import './components/header',
+@import './components/main.scss',
+        './components/header',
         './components/nav',
         './components/modal-nav',
-        './components/search-screen';
+        './components/search-screen',
+        './components/section',
+        './components/card';

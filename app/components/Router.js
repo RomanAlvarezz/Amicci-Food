@@ -27,7 +27,7 @@ export function Router() {
         let html = '';
         
         for (let i = 0; i < apis.MEALTYPES.length; i++) {
-            for (let j = 0; j < 8; j++) {
+            for (let j = 0; j < 5; j++) {
                 html += Card(arrayrecipes[j])
             }
             $main.appendChild(Section(apis.MEALTYPES[i], html))
