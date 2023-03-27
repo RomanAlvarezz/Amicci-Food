@@ -13,7 +13,14 @@ API_ID = '9c838449',
 API_KEY = '1428c2bae400b1284a67b5aaa47286ac',
 RECIPES = `${EDANAM_API}?type=public&app_id=${API_ID}&app_key=${API_KEY}&mealType=`,
 SEARCHRECIPE = `${EDANAM_API}`,
-MEALTYPES = ['breakfast', 'brunch', 'lunch', 'snack', 'dinner', 'teatime'];
+MEALTYPES = ['breakfast', 'lunch', 'snack', 'dinner', 'teatime'],
+MEALICONS = {
+    breakfast: 'fa-solid fa-pancakes',
+    lunch: 'fa-solid fa-avocado',
+    snack: 'fa-solid fa-cookie-bite',
+    dinner: 'fa-solid fa-pizza-slice',
+    teatime: 'fa-solid fa-mug-tea'
+};
 
 let url = 'https://api.edamam.com/api/recipes/v2?type=public&app_id=9c838449&app_key=1428c2bae400b1284a67b5aaa47286ac&mealType=Breakfast';
 
@@ -25,5 +32,6 @@ export default {
     RECIPETYPES: RECIPES,
     MEALTYPES,
     API_ID,
-    API_KEY
+    API_KEY,
+    MEALICONS
 }

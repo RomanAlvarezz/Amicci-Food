@@ -1,5 +1,6 @@
 .search-screen {
     &__background {
+        z-index: 1;
         display: none;
         position: fixed;
         top: 0;

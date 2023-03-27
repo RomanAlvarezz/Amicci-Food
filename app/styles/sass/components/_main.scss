@@ -2,4 +2,11 @@
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
+
+    &__grid {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
 }
+
